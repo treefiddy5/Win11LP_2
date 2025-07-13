@@ -1,17 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Vanilla JavaScript App</title>
+    <meta charset="UTF-8">
+    <title>Windows 11 Compatibility Check</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f6f8;
+            color: #333;
+        }
+        header {
+            background-color: #0078d4;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+        .cta {
+            text-align: center;
+            margin: 30px 0;
+        }
+        .cta button {
+            background-color: #0078d4;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .booking {
+            display: flex;
+            justify-content: center;
+            margin: 40px 20px;
+        }
+        iframe {
+            width: 100%;
+            max-width: 800px;
+            height: 600px;
+            border: none;
+        }
+        footer {
+            background-color: #e1e1e1;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+        }
+    </style>
 </head>
-
 <body>
-  <main>
-    <h1>Vanilla JavaScript App</h1>
-  </main>
-</body>
 
+<header>
+    <h1>Is Your PC Ready for Windows 11?</h1>
+    <p>Windows 10 support has ended. Let’s check your computer’s compatibility and explore your upgrade options.</p>
+</header>
+
+<div class="cta">
+    <button onclick="document.getElementById('booking').scrollIntoView({ behavior: 'smooth' });">
+        Book Your Evaluation
+    </button>
+</div>
+
+<div class="booking" id="booking">
+    <iframe src="https://outlook.office.com/bookwithme/user/82a248af20d341a9b73f4e246dbc01cd@PTCLLC.US/meetingtype/lK-JwscY9Ee9O6SOLfqBKQ2?anonymous&ismsaljsauthenabled&ep=mlink" allowfullscreen></iframe>
+</div>
+
+<footer>
+    <p></p>
+</footer>
+
+</body>
 </html>
