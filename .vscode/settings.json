@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/0fa9593f-e6b5-4e12-8104-c4993f6ca9ac/resourceGroups/Win11LP/providers/Microsoft.Web/sites/Win11-Upgrade",
+    "appService.deploySubpath": "."
+}
